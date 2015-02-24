@@ -9,8 +9,7 @@
   "author": "",
   "license": "BSD-2-Clause",
   "dependencies": {
-    "cheerio": "~0.18.0",
-    "underscore": "~1.8.2",
-    "request": "~2.53.0"
+    "cep-scraper": "codigourbano/cep-scraper",
+    "express": "~4.12.0"
   }
 }
