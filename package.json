@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "BSD-2-Clause",
+  "author": "Miguel Peixe <miguel@cardume.art.br>",
+  "license": "MIT",
   "dependencies": {
     "cep-scraper": "codigourbano/cep-scraper",
     "express": "~4.12.0"
