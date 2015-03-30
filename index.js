@@ -19,7 +19,7 @@ app.all('/api', function(req, res) {
 });
 
 app.get('/*', function(req, res) {
-	res.sendfile('dist/views/index.html');
+	res.sendfile(__dirname + '/dist/views/index.html');
 });
 
 var port = process.env.PORT || 8000;
