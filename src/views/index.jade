@@ -1,0 +1,26 @@
+doctype html
+html(lang='pt-BR')
+	include includes/head
+	body
+		#content
+			header#masthead
+				h2 Código Urbano
+				h1 CEP
+			section#search(ng-controller="CEPController")
+				input(ng-model="search" type="text" placeholder="Digite um CEP ou uma busca")
+				ul.address-list(ng-show="search && results.length")
+					li.address-item(ng-repeat="result in results")
+						article.cep-item
+							header
+								p.address
+									span.name(ng-show="result.address.name") {{result.address.name}} 
+									span.number(ng-show="result.address.number") {{result.address.number}}
+							section
+								p.client(ng-show="result.client") {{result.client}}
+								p.district {{result.district}}
+								p.city {{result.city}}
+								p.state {{result.state}}
+								p.cep {{result.postcode}}
+
+
+		include includes/foot
